@@ -278,6 +278,38 @@ In GCP Console → VPC Network → Firewall Rules → allow **TCP port 8080** fo
 
 ---
 
+## Sample Output
+
+### Server Terminal Output
+```bash
+"2026-06-07 04:35:56 - INFO -> [Server is waiting for clients all over the world on port 8080]"
+"2026-06-07 05:11:26 - INFO -> [Server:- New connection from ::ffff:190.109.21.249, waiting for auth]"
+"2026-06-07 05:11:26 - INFO -> [Unauth Pending list (LinkedList):- ::ffff:190.109.21.249 NOAUTH, END]"
+"2026-06-07 05:11:26 - INFO -> [Server:- Auth failed from ::ffff:190.109.21.249]"
+"2026-06-07 05:11:26 - INFO -> [Unauth Pending list (LinkedList):- END]"
+"2026-06-07 05:21:56 - INFO -> [Server:- New connection from ::ffff:64.62.156.10, waiting for auth]"
+"2026-06-07 05:21:56 - INFO -> [Unauth Pending list (LinkedList):- ::ffff:64.62.156.10 NOAUTH, END]"
+"2026-06-07 05:21:56 - INFO -> [Server:- Auth failed from ::ffff:64.62.156.10]"
+"2026-06-07 05:21:56 - INFO -> [Unauth Pending list (LinkedList):- END]"
+"2026-06-07 05:33:40 - INFO -> [Server:- New connection from ::ffff:176.65.148.2, waiting for auth]"
+"2026-06-07 05:33:40 - INFO -> [Unauth Pending list (LinkedList):- ::ffff:176.65.148.2 NOAUTH, END]"
+"2026-06-07 05:33:40 - INFO -> [Server:- Auth failed from ::ffff:176.65.148.2]"
+"2026-06-07 05:33:40 - INFO -> [Unauth Pending list (LinkedList):- END]"
+"2026-06-07 05:50:33 - INFO -> [Server:- New connection from ::ffff:103.70.86.147, waiting for auth]"
+"2026-06-07 05:50:33 - INFO -> [Unauth Pending list (LinkedList):- ::ffff:103.70.86.147 NOAUTH, END]"
+"2026-06-07 05:50:33 - INFO -> [Server:- Auth success from ::ffff:103.70.86.147]"
+"2026-06-07 05:50:33 - INFO -> [Unauth Pending list (LinkedList):- END]"
+"2026-06-07 05:50:33 - INFO -> [Users (AVL):- [1] ::ffff:103.70.86.147 connected idle, END]"
+"2026-06-07 05:50:33 - INFO -> [Active users (Hash map):- Inserted user 1]"
+"2026-06-07 05:50:33 - INFO -> [Active users (Hash map):- [61: 1 -> NULL] ]"
+"2026-06-07 05:50:33 - INFO -> [Server:- New user 1 connected from ::ffff:103.70.86.147]"
+"2026-06-07 05:50:33 - INFO -> [Users Queue (Queue):- [1], END]"
+"2026-06-07 05:50:36 - INFO -> [Active users (Hash map):- Removed user 1]"
+"2026-06-07 05:50:36 - INFO -> [Active users (Hash map):- ]"
+"2026-06-07 05:50:36 - INFO -> [Users Queue (Queue):- END]"
+"2026-06-07 05:50:36 - INFO -> [Server:- User 1 disconnected while waiting in queue]"
+```
+
 ## Notes
 
 - The server uses **no STL containers**, all data structures are written from scratch.
